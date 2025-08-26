@@ -219,6 +219,63 @@ main {
     background-color: #45a049;
 }
 
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #f8f8f8; /* Light gray background */
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.contact-map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 400px; /* Fixed height */
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 300px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-item .material-symbols-outlined {
+    font-size: 2rem;
+    color: #ff9900;
+}
+
+.info-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.info-item p strong {
+    color: #333;
+}
 
 @media screen and (max-width: 768px) {
     .nav-bar {
@@ -284,5 +341,12 @@ main {
 
     .products {
         padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center; /* Center items for smaller screens */
     }
 }
