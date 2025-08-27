@@ -277,6 +277,118 @@ main {
     color: #333;
 }
 
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #f2f2f2; /* Lighter text color for better contrast */
+    padding: 3rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* Minimum width for each section */
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 40px;
+    height: 2px;
+    background-color: #ff9900;
+}
+
+.footer-section p {
+    color: #a0a0a0;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.footer-section.links ul {
+    list-style: none;
+}
+
+.footer-section.links ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section.links ul li a:hover {
+    color: #ff9900;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social-media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-social-media .footer-link:hover {
+    transform: translateY(-3px);
+}
+
+#instagram {
+    background-color: #e4405f;
+}
+
+#facebook {
+    background-color: #3b5998;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+
+
+.footer-copyright {
+    text-align: center;
+    padding: 1.5rem 0 0;
+    margin-top: 2rem;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+
 @media screen and (max-width: 768px) {
     .nav-bar {
         padding: 1rem 2rem;
@@ -341,6 +453,21 @@ main {
 
     .products {
         padding: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
+
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
