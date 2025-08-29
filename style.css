@@ -346,6 +346,7 @@ footer {
 .footer-social-media {
     display: flex;
     gap: 1rem;
+    justify-content: center
 }
 
 .footer-social-media .footer-link {
@@ -388,6 +389,24 @@ footer {
     color: #a0a0a0;
 }
 
+.botao-wpp {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 @media screen and (max-width: 768px) {
     .nav-bar {
